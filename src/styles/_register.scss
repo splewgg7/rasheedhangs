@@ -1,0 +1,48 @@
+.register-wrapper {
+  width: 30%;
+  @include flex(column, center, center);
+  position: absolute;
+  right: 5rem;
+  top: 30%;
+}
+.register-container {
+  border-radius: 2rem;
+  box-shadow: 13px 10px 20px -3px rgba(0, 0, 0, 0.75);
+  background: white;
+  form {
+    @include flex(column, space-around, center);
+    position: relative;
+    h2,
+    .register-username,
+    .register-password,
+    .register-cpassword {
+      padding: 0.8rem;
+    }
+    label {
+      font-weight: 600;
+    }
+    button {
+      margin: 1rem;
+      width: 5rem;
+      height: 2rem;
+      background: rgb(33, 33, 122);
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-family: $all-font-style;
+      border-radius: 0.5rem;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background: rgb(71, 71, 199);
+      }
+    }
+    span {
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+      padding: 1rem;
+      font-weight: 800;
+    }
+  }
+}

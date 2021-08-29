@@ -1,0 +1,24 @@
+//global styles
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Montserrat:wght@300&display=swap");
+$big-size: 4rem;
+$mid-size: 2.5rem;
+$small-size: 1.5rem;
+$logo-font-style: "Architects Daughter", cursive;
+$all-font-style: "Montserrat", sans-serif;
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $all-font-style;
+}
+html {
+  font-size: 62.5;
+}
